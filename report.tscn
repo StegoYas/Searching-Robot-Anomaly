@@ -1,0 +1,147 @@
+[gd_scene load_steps=18 format=3 uid="uid://nampk5kyqul6"]
+
+[ext_resource type="Script" uid="uid://b8icw5u44i4e0" path="res://report.gd" id="1_7ngoa"]
+[ext_resource type="Texture2D" uid="uid://bo5wcpjnd40aq" path="res://icon.svg" id="1_mmd0k"]
+[ext_resource type="Texture2D" uid="uid://coq7booqkbdeq" path="res://textures/whiteboard_battery_01.jpg" id="3_wpx5y"]
+[ext_resource type="Texture2D" uid="uid://cy0wrlh3ajqtx" path="res://textures/whiteboard_power_01.jpg" id="4_wyrx8"]
+[ext_resource type="Texture2D" uid="uid://dtbmp7u647fda" path="res://textures/whiteboard_battery_02.jpg" id="5_eyihf"]
+[ext_resource type="Texture2D" uid="uid://df0il7m8ocy7y" path="res://textures/whiteboard_power_02.jpg" id="6_tc3ll"]
+[ext_resource type="PackedScene" uid="uid://d4lbuo3ney345" path="res://objects/props/Whiteboard.gltf" id="7_tc3ll"]
+[ext_resource type="FontFile" uid="uid://bsg6fknwl6vl2" path="res://fonts/FiraSansCondensed-Bold.ttf" id="8_28x75"]
+[ext_resource type="Texture2D" uid="uid://c4wple6miuclj" path="res://textures/ErrorList.png" id="8_h6cc1"]
+[ext_resource type="AudioStream" uid="uid://b0nrrtjpubu2n" path="res://sounds/correct_bell.ogg" id="10_yh7gd"]
+[ext_resource type="AudioStream" uid="uid://c53wnas06h8bi" path="res://sounds/incorrect_buzzer.ogg" id="11_yfjh8"]
+[ext_resource type="PackedScene" uid="uid://bw1p6obtd4l81" path="res://objects/props/ReportLight.gltf" id="12_4hof2"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_6kybn"]
+viewport_path = NodePath("SubViewport")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tc3ll"]
+resource_local_to_scene = true
+albedo_color = Color(0.912289, 0.912289, 0.912289, 1)
+albedo_texture = SubResource("ViewportTexture_6kybn")
+metallic = 0.33
+metallic_specular = 0.0
+roughness = 0.31
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_6kybn"]
+resource_local_to_scene = true
+material = SubResource("StandardMaterial3D_tc3ll")
+size = Vector2(0.7, 1.24)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_28x75"]
+albedo_texture = ExtResource("8_h6cc1")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_yh7gd"]
+material = SubResource("StandardMaterial3D_28x75")
+size = Vector2(1, 0.453)
+orientation = 2
+
+[node name="Report" type="Node3D"]
+script = ExtResource("1_7ngoa")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+visible = false
+mesh = SubResource("PlaneMesh_6kybn")
+
+[node name="SubViewport" type="SubViewport" parent="."]
+disable_3d = true
+handle_input_locally = false
+size = Vector2i(1156, 2048)
+
+[node name="Control" type="Control" parent="SubViewport"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="SubViewport/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ReportSubviewportNode" type="Node2D" parent="SubViewport"]
+unique_name_in_owner = true
+
+[node name="Icon" type="Sprite2D" parent="SubViewport/ReportSubviewportNode"]
+visible = false
+position = Vector2(151, 147)
+texture = ExtResource("1_mmd0k")
+
+[node name="Node2D" type="Node2D" parent="SubViewport"]
+
+[node name="BannerRobotChargeBattery" type="Sprite2D" parent="SubViewport/Node2D"]
+position = Vector2(200, 100)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("3_wpx5y")
+
+[node name="BannerRobotPowerOff" type="Sprite2D" parent="SubViewport/Node2D"]
+position = Vector2(400, 100)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("4_wyrx8")
+
+[node name="BannerRobotChargeBattery2" type="Sprite2D" parent="SubViewport/Node2D"]
+position = Vector2(650, 100)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("5_eyihf")
+
+[node name="BannerRobotPowerOff2" type="Sprite2D" parent="SubViewport/Node2D"]
+position = Vector2(850, 100)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("6_tc3ll")
+
+[node name="Whiteboard" parent="." instance=ExtResource("7_tc3ll")]
+transform = Transform3D(-3.71547e-08, -0.85, 3.71547e-08, 0, -3.71547e-08, -0.85, 0.85, -3.71547e-08, 1.62408e-15, 0.182003, 0, -0.0152206)
+visible = false
+
+[node name="ErrorsLabel" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.106336, 0.00177254)
+pixel_size = 0.001
+text = "PREVIOUS FLOOR STATUS"
+font_size = 90
+outline_size = 0
+
+[node name="BatteryErrorLabel" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.524475, -0.180865, 0.00177254)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "NO ERROR"
+font = ExtResource("8_28x75")
+font_size = 64
+outline_size = 0
+horizontal_alignment = 0
+
+[node name="PowerErrorLabel" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.524475, -0.457492, 0.00177254)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "NO ERROR"
+font = ExtResource("8_28x75")
+font_size = 64
+outline_size = 0
+horizontal_alignment = 0
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, -0.239105, 0)
+mesh = SubResource("PlaneMesh_yh7gd")
+
+[node name="CorrectSound" type="AudioStreamPlayer3D" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("10_yh7gd")
+volume_db = -15.0
+bus = &"Environment"
+
+[node name="IncorrectSound" type="AudioStreamPlayer3D" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("11_yfjh8")
+volume_db = -20.0
+bus = &"Environment"
+
+[node name="ReportLight" parent="." instance=ExtResource("12_4hof2")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0.290473, 0.00256839)

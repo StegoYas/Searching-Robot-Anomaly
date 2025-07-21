@@ -1,0 +1,240 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://0q6b4obnk0g0"
+path="res://.godot/imported/office.gltf-bc5ab28a41b2291e68d7ac548abbd8c7.scn"
+
+[deps]
+
+source_file="res://objects/office.gltf"
+dest_files=["res://.godot/imported/office.gltf-bc5ab28a41b2291e68d7ac548abbd8c7.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path="uid://5c4gqq2s84y1"
+_subresources={
+"materials": {
+"Celing": {
+"use_external/enabled": true,
+"use_external/path": "uid://bvd3td7awq4t"
+},
+"GoldDivision": {
+"use_external/enabled": true,
+"use_external/path": "res://materials/office_mats/GoldDivision.tres"
+},
+"LightBase": {
+"use_external/enabled": true,
+"use_external/path": "res://materials/office_mats/LightBase.tres"
+},
+"LightLight": {
+"use_external/enabled": true,
+"use_external/path": "res://materials/office_mats/LightLight.tres"
+},
+"LineaA": {
+"use_external/enabled": true,
+"use_external/path": "res://materials/office_mats/LineaA.tres"
+},
+"LineaB": {
+"use_external/enabled": true,
+"use_external/path": "res://materials/office_mats/LineaB.tres"
+},
+"LineaC": {
+"use_external/enabled": true,
+"use_external/path": "res://materials/office_mats/LineaC.tres"
+},
+"MI_umonbbqdy": {
+"use_external/enabled": true,
+"use_external/path": "uid://bljj0t5odfl1h"
+},
+"PitchBlack": {
+"use_external/enabled": true,
+"use_external/path": "uid://brsil0vd5gwoq"
+},
+"Slot": {
+"use_external/enabled": true,
+"use_external/path": "res://materials/office_mats/Slot.tres"
+},
+"Wall": {
+"use_external/enabled": true,
+"use_external/path": "uid://ct6ya1121r44a"
+},
+"WallWritting": {
+"use_external/enabled": true,
+"use_external/path": "res://materials/office_mats/WallWritting.tres"
+},
+"材质.001": {
+"use_external/enabled": true,
+"use_external/path": "res://materials/office_mats/office_door_material.tres"
+}
+},
+"meshes": {
+"office_J1_a21_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://meshes/door_storage_frame.res"
+},
+"office_J1_a21_002": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://meshes/door_storage.res"
+},
+"office_Plane": {
+"generate/lightmap_uv": 1,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": false,
+"save_to_file/path": ""
+}
+},
+"nodes": {
+"PATH:Division_001": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:Division_002": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:LightInstancing/Lamp_001/LampSquare": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:LightInstancing/Lamp_00110/LampSquare10": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:LightInstancing/Lamp_00111/LampSquare11": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:LightInstancing/Lamp_00112/LampSquare12": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:LightInstancing/Lamp_00113/LampSquare13": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:LightInstancing/Lamp_00114/LampSquare14": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:LightInstancing/Lamp_00115/LampSquare15": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:LightInstancing/Lamp_00116/LampSquare16": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:LightInstancing/Lamp_00117/LampSquare17": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:LightInstancing/Lamp_00118/LampSquare18": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:LightInstancing/Lamp_00119/LampSquare19": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:LightInstancing/Lamp_0012/LampSquare2": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:LightInstancing/Lamp_00120/LampSquare20": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:LightInstancing/Lamp_00121/LampSquare21": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:LightInstancing/Lamp_00122/LampSquare22": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:LightInstancing/Lamp_00123/LampSquare23": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:LightInstancing/Lamp_00124/LampSquare24": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:LightInstancing/Lamp_00125/LampSquare25": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:LightInstancing/Lamp_00126/LampSquare26": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:LightInstancing/Lamp_0013/LampSquare3": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:LightInstancing/Lamp_0014/LampSquare4": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:LightInstancing/Lamp_0015/LampSquare5": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:LightInstancing/Lamp_0016/LampSquare6": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:LightInstancing/Lamp_0017/LampSquare7": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:LightInstancing/Lamp_0018/LampSquare8": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:LightInstancing/Lamp_0019/LampSquare9": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:LineaA": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:LineaA_End": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:LineaB": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:LineaB_End": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:LineaC": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:LineaC_End": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:Paredes": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:Puerta": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:PuertaMarco": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:Suelo": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:Techo": {
+"mesh_instance/cast_shadow": 0
+},
+"PATH:WallWritting": {
+"mesh_instance/cast_shadow": 0
+}
+}
+}
+gltf/naming_version=1
+gltf/embedded_image_handling=1

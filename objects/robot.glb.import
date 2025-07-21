@@ -1,0 +1,88 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://i62gmp8ivyp7"
+path="res://.godot/imported/robot.glb-14fe1662f9d94c3f92fba21680aa0408.scn"
+
+[deps]
+
+source_file="res://objects/robot.glb"
+dest_files=["res://.godot/imported/robot.glb-14fe1662f9d94c3f92fba21680aa0408.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=0
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path="uid://5c4gqq2s84y1"
+_subresources={
+"materials": {
+"BarbedWire": {
+"use_external/enabled": true,
+"use_external/path": "res://materials/robot_mats/BarbedWire.tres"
+},
+"BrainSphere": {
+"use_external/enabled": true,
+"use_external/path": "uid://jn43cm5mxrwk"
+},
+"Robot_Battery": {
+"use_external/enabled": true,
+"use_external/path": "uid://c3mm4vs8sgbsm"
+},
+"Robot_Clothes": {
+"use_external/enabled": true,
+"use_external/path": "uid://4w2epbfv7gf0"
+},
+"Robot_Hinges": {
+"use_external/enabled": true,
+"use_external/path": "res://materials/robot_mats/Robot_Hinges.tres"
+},
+"Robot_Power": {
+"use_external/enabled": true,
+"use_external/path": "uid://bbs5yn17fvkqi"
+},
+"Robot_Red": {
+"use_external/enabled": true,
+"use_external/path": "res://materials/robot_mats/Robot_Red.tres"
+},
+"Robot_Red_Glow": {
+"use_external/enabled": true,
+"use_external/path": "res://materials/robot_mats/Robot_Red_Glow.tres"
+},
+"Robot_White_Glow": {
+"use_external/enabled": true,
+"use_external/path": "res://materials/robot_mats/Robot_White_Glow.tres"
+},
+"Robot_face": {
+"use_external/enabled": true,
+"use_external/path": "res://materials/robot_mats/Robot_face.tres"
+},
+"Robot_shoes": {
+"use_external/enabled": true,
+"use_external/path": "res://materials/robot_mats/Robot_shoes.tres"
+},
+"Robot_skin": {
+"use_external/enabled": true,
+"use_external/path": "uid://b2uky0x4h2f0h"
+}
+}
+}
+gltf/naming_version=1
+gltf/embedded_image_handling=1
